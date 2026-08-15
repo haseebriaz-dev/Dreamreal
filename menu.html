@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Favicon (Favicon Icon Fix for Google Search Results) -->
+  <link rel="icon" href="Dream-logo.jpeg" sizes="32x32" type="image/jpeg" />
+  <link rel="icon" href="Dream-logo.jpeg" sizes="192x192" type="image/jpeg" />
+  <link rel="apple-touch-icon" href="Dream-logo.jpeg" />
+  <link rel="shortcut icon" href="Dream-logo.jpeg" type="image/jpeg" />
+    <!-- Primary Meta Tags -->
+    <title>Online Food Menu & Delivery | Dream Café Shakargarh</title>
+    <meta name="title" content="Online Food Menu & Delivery | Dream Café Shakargarh" />
+    <meta name="description" content="Order online from Dream Café & Restaurant Shakargarh. Fast food, deals, espresso coffee, and home delivery available in Shakargarh." />
+    <meta name="keywords" content="Dream Cafe Menu, Dream Cafe Delivery, Fast Food Shakargarh, Order Food Online Shakargarh" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dream Café Menu - Order Food Online in Shakargarh" />
+    <meta property="og:description" content="Check out our full menu and get your favorite meals delivered to your doorstep in Shakargarh." />
+    <meta property="og:image" content="Dream-logo.jpeg" />
+
+    <!-- Structured Data / JSON-LD Schema for Menu -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Menu",
+      "name": "Dream Cafe Menu",
+      "description": "Full food and drinks menu for Dream Cafe & Restaurant",
+      "mainEntityOfPage": "https://dreamscafeskg.com/menu.html",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "PKR"
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+    <!-- NAVBAR (Navbar Component) -->
+    <header class="header">
+        <div class="brand-area">
+            <img src="Dream-logo.jpeg" alt="Dream Café Logo" class="logo" />
+            <div class="cafename">Dream Café & Restaurant</div>
+        </div>
+
+        <nav class="navbar" id="navbar-links">
+            <!-- Dynamic Navigation Links JS se ayenge -->
+        </nav>
+
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <a href="#cust-name" class="mobile-cart-btn">
+                📦 <span id="mobile-cart-count">0</span>
+            </a>
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Menu">☰</button>
+        </div>
+    </header>
+
+    <div class="menu-backdrop" id="menu-backdrop"></div>
+
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+        <!-- Mobile Links JS se rendering hongay -->
+    </div>
+
+    <!-- MAIN LAYOUT -->
+    <main class="main-container">
+        <!-- LEFT CONTENT: MENU SECTIONS -->
+        <div class="menu-sections" id="menu-sections">
+            <!-- Dishes and Deals JS se auto generate honge -->
+        </div>
+
+        <!-- RIGHT ASIDE: CART CONTAINER (Cart Component) -->
+        <aside class="rightaside">
+            <div class="cart-title">
+                <span>Your Order</span>
+                <span>🛒</span>
+            </div>
+            <div class="form-section">
+                <span class="form-label">📋 Delivery(Only Shakargarh):</span>
+                <input 
+                    type="text" 
+                    id="cust-name"
+                    class="form-input" 
+                    placeholder=" (Your Name)..." 
+                />
+                <input 
+                    type="text" 
+                    id="cust-address"
+                    class="form-input" 
+                    placeholder="Format(Street,Road/Town,City)..." 
+                />
+
+                <span class="form-label">💳 Payment Method:</span>
+                <select id="payment-method" class="form-select">
+                    <option value="Cash on Delivery (COD)">💵 Cash on Delivery (COD)</option>
+                    <option value="Easypaisa">📱 Easypaisa</option>
+                    <option value="JazzCash">📱 JazzCash</option>
+                </select>
+
+                <ul id="cart-items">
+                    <!-- Cart items will be rendered here dynamically -->
+                </ul>
+
+                <div class="cart-total">
+                    <span>Total Bill:</span>
+                    <span>Rs. <span id="total-bill">0</span></span>
+                </div>
+                
+                <button class="order-btn" id="send-order-btn">Send Order</button>
+            </div>
+        </aside>
+    </main>
+
+    <!-- FOOTER (Footer Component) -->
+   <!-- FOOTER (Classic & Iconic Design) -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Brand / Identity -->
+        <div class="footer-brand">
+            <h3>DREAM CAFÉ & RESTAURANT</h3>
+            <p class="tagline">A taste of luxury, brewed in Shakargarh</p>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <!-- Info Grid -->
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>📍 Location</h4>
+                <p>Norkot Road Opp. New Nadra Office Shakargarh, Pakistan</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>📞 Contact Us</h4>
+                <p><a href="tel:+923001212790">+92 300 1212790</a></p>
+                <p><a href="mailto:dreamcafeskg@gmail.com">dreamcafeskg@gmail.com</a></p>
+            </div>
+
+            <div class="footer-col">
+                <h4>✨ Quick Links</h4>
+                <div class="footer-socials">
+                    <a href="https://maps.app.goo.gl/FYxC4wjHgGXNFpuo6" target="_blank">🗺️ Get Directions</a>
+                    <a href="https://www.tiktok.com/@dream.shakargarh" target="_blank">🎵 TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <!-- Credits & Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dream Café & Restaurant. All rights reserved.</p>
+            <p class="credits">Owner: <span>AbdulRehman</span> &nbsp;|&nbsp; Designed by: <span>Haseeb Riaz</span></p>
+        </div>
+    </div>
+</footer>
+
+    <script src="menu.js"></script>
+</body>
+</html>
